@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title> Cadastro </title>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="img/logoo.png">
+        </div>
+        <div class="menu">
+            
+            <a href="home.html">
+                <label> <i class="small material-icons">home</i>Home </label>
+            </a>
+
+            <a href="cadastro.html">
+                <label><i class="tiny material-icons">assignment</i>Cadastro </label>
+            </a>
+
+            <a href="">
+                <label><i class="tiny material-icons">work</i>Serviços </label>
+            </a>
+
+            <a href="">
+                <label><i class="tiny material-icons">contacts</i>Contato </label>
+            </a>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="container">
+            
+            <form action="recebeDados.php" method="POST">
+
+                <fieldset>
+                 <label for="fname"> Nome completo :</label><br>
+                 <input type="text" id="fname" name="fname" required autofocus> <br>
+                 
+                 <label for="cpf"> CPF: </label><br>
+                 <input type="text" id="cpf" name="cpf" 
+                 \pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ placeholder="xxx.xxx.xxx-xx" required autofocus><br>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                <label for="bairro"> Bairro: </label><br>
+                <input type="text" id="bairro" name="bairro" required autofocus> <br>
+
+                <label for="CEP"> CEP: </label><br>
+                <input type="text" id="cep" name="cep" minlength="8" required autofocus>
+
+                </fieldset>
+
+                <br>
+                 <fieldset>
+                 <input type="radio" id="male" name="gender">
+                 <label for="male">Masculino</label><br>
+                 <input type="radio" id="female" name="gender">
+                 <label for="female">Feminino</label><br>
+                 <input type="radio" id="other" name="gender">
+                 <label for="other">Outro</label>
+                 </fieldset>
+
+                 <br>
+
+                 <fieldset>
+                <label for="email"> Email: </label><br>
+                <input type="text" id="email" name="email" placeholder="Digite seu email" required autofocus /> <br>
+
+                <label for="password"> Senha: </label><br>
+                <input type="password" id="password" name="password" required autofocus>
+
+                 </fieldset>
+
+                 <br><input type="submit" id="submit" value="Enviar">
+               &nbsp; <input type="reset" id="reset" value="Limpar">
+               </form>
+
+
+        </div>
+       
+    </section>
+</body>
+</html>

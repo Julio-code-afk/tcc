@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: #FA8072;
+}
+
+nav{
+    background-color: #FFA07A;
+    width: 250px;
+    height: 100%;
+    box-shadow: 1px 0px 3px #FA8072;
+    float: left;
+    position: fixed;
+    transition: .3s;
+    overflow-y: auto ;
+    overflow-x: hidden;
+}
+
+section{
+    float: right;
+    width: calc(100% - 250px);
+    transition: .3s;
+}
+
+.logo{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.menu{
+    margin-top: 10px;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    transition: .3s;
+}
+.menu a label{
+    margin-left: 20px;
+}
+.menu a:hover{
+    background-color: #FA8072;
+    border-left: solid 5px #B22222;
+}
+
+.container{
+    margin: 20px;
+}
+
+fieldset{
+    border:0;
+}
+
+/* celular */
+@media(max-width: 576px){
+
+    nav{
+        width: 0px;
+    }
+
+    section{
+        width: 100%;
+    }
+}
+
