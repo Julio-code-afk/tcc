@@ -55,6 +55,7 @@ main{
 
 /* grid */
 
+
 .myButton {
 	background-color:#b22222;
 	border-radius:28px;
@@ -70,7 +71,7 @@ main{
 }
 .myButton:hover {
     color: brown;
-    background-color:#FA8072
+    background-color:#FA8072;
     border: solid 1px brown;
 }
 .myButton:active {
@@ -103,7 +104,7 @@ main{
     min-height: 1px;
     padding-left: 1px;
     padding-right: 1px;
-    width: 100%;
+    width: 50%;
     margin-right: -4px;
 }
 .col img{
@@ -112,6 +113,7 @@ main{
     text-align: center;
     margin: 2px 0px;
     color: #fff;
+    width: 40%; 
     }
     /* duas colunas */
     @media(min-width: 480px){
@@ -132,12 +134,12 @@ fieldset{
     border:0;
 }
 
-footer{
+.footer{
     text-align: center;
-    margin-top: 20px;
+    width: 100%;
     background-color: brown;
-    height: 50px;
-    text-decoration: none;
+    float: right;
+    padding: 20%, 20%;
 }
 
 /* celular */
