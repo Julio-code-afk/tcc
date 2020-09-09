@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
             <a href="home.html">
                 <label> <i class="small material-icons">home</i>Home </label>
             </a>
-
+            
             <a href="cadastro.html">
                 <label><i class="tiny material-icons">assignment</i>Login </label>
             </a>
@@ -38,12 +38,39 @@
 
 
 
-    <header></header>
+    <header>
+        <div id="imagens">
+
+            <ul>
+                <li>
+                    <img src="img/promocao.jpg" alt="imagem01" title="imagem01"/>
+                </li>
+        
+                <li>
+                    <img src="img/promoçao1.png" alt="imagem02" title="imagem02"/>
+                </li>
+        
+                <li>
+                    <img src="img/promoçao3.jpg" alt="imagem03" title="imagem03"/>
+        
+                </li>
+            </ul>
+        
+            <div class="pag">
+                <a href="#" id="ant">Anterior</a>&nbsp;
+                <a href="#" id="prox">Próximo</a>
+            </div><!--FIM DIV PAG-->
+        
+        </div><!--FIM DIV IMAGENS-->
+
+    </header>
 
     <main>
 
+        <br>
         <div class="container">
 
+            <h1> Sala </h1>
             <div class="row">
                 <div class="col col-2">
                     <div > <img src="img/mv1.png"></div><a href="reservacli.html" class="myButton">Reservar</a>
@@ -57,11 +84,14 @@
                 <div class="col col-2">
                     <div> <img src="img/mv3.png"></div><a href="reservacli.html" class="myButton">Reservar</a>
                 </div>
+                
                 <div class="col col-2">
                     <div> <img src="img/mv4.jpg"></div><a href="reservacli.html" class="myButton">Reservar</a>
                 </div>
             </div>
-        
+
+            
+            <h1> Cozinha </h1>
             <div class="row">
                 <div class="col col-2">
                     <div> <img src="img/mv5.png"></div><a href="reservacli.html" class="myButton">Reservar</a>
@@ -80,6 +110,7 @@
                 </div>
             </div>
         
+            <h1> Banheiro </h1>
             <div class="row">
                 <div class="col col-2">
                     <div> <img src="img/mv9.png"></div><a href="reservacli.html" class="myButton">Reservar</a>
@@ -100,6 +131,19 @@
 
     
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jcycle.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#imagens ul').cycle({
+                fx: 'fade',
+                speed: 2000,
+                timeout: 5000,
+                next: '#prox',
+                prev: '#ant',
+            })
+        })
+
+
+    </script>
 </body>
 </html>
