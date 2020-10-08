@@ -9,6 +9,7 @@
 
 body{
     background-color: #FA8072;
+    margin: 0 auto;
 }
 
 nav{
@@ -36,29 +37,25 @@ main{
 }
 
 /* slider */
-#imagens{
-    margin:0 auto;
-    padding:10px;
-    width:300px; 
-    height:150px;
-    margin-top:10px;
-    margin-bottom: 40px;
+.slider{
+    width:1095px; 
+    height:200px;
+    margin-bottom: 30px;
     text-align: center;
     float: right;
-    margin-right: 30%;
 }
-#imagens img{
-    width: 300px;
-    height: 150px;
+.slider img{
+    width: 1095px;
+    height: 200px;
 }
-#imagens ul{
+/*.slider{
     margin:0;
     padding:0;
     list-style:none;
 }
 #imagens .pag{
     margin:20px 0 0 0;
-}
+}*/
 
 /* menu */
 .menu a{
@@ -119,17 +116,35 @@ main{
     cursor: pointer;
 }
 
+h4 a{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    color: #fff;
+}
+
+h4 a:hover{
+    color: brown;
+    background-color:#FA8072;
+    text-decoration-color: brown ;
+}
+
+
+/*.Button {
+ 
+}*/
+
 /*botao*/
 .myButton {
 	background-color:#b22222;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#fff7ff;
 	font-size:15px;
 	font-weight:bold;
     padding:5px 15px;
     text-align: center;
 	text-shadow:0px 1px 0px #b22222;
+    border-radius: 6px;
 }
 .myButton:hover {
     color: brown;
@@ -139,7 +154,7 @@ main{
 .myButton:active {
 	position:relative;
 	top:1px;
-}
+} 
 fieldset{
     border:0;
 }
@@ -184,4 +199,10 @@ fieldset{
     font-size: 20px;
 }
 
+.pag{
+    margin-bottom: 10px;
+}
+
+.pag a {
+    color: #ffffff;}
 
