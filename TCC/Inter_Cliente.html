@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Cadastro de Móveis </title>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="img/logoo.png">
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="home.html"><li><i class="small material-icons">home</i> Home</a>
+                    <ul>
+                        <a href="#sala"><li> Sala </li></a>
+                        <a href="#cozinha"><li> Cozinha </li></a>
+                        <a href="#banheiro"><li> Banheiro </li></a>
+                    </ul>
+                <a href="cadastro.html"><li><i class="tiny material-icons">assignment</i> Cadastro/Login </li></a>
+                <a href="reservacli.html"><li><i class="tiny material-icons">event_note</i> Reservas </li></a>
+                <a href="admmontagem.html"><li><i class="tiny material-icons">weekend</i> Montagem </li></a>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main>
+        <nav class="nav_tabs">
+            <ul>
+                <li>
+                    <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+                    <label for="tab1" class="tab_label">Dados</label>
+                    <div class="tab-content">
+                        <h2>Dados do Funcionário</h2>
+                        <article>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum, felis sed feugiat tristique, massa nisl pretium ligula, vel finibus risus lacus at mauris. Proin vel mollis augue. Sed non auctor ipsum, congue facilisis diam. Proin sed enim odio. Ut libero mi, luctus sit amet tincidunt a, ullamcorper sit amet ex. Duis faucibus condimentum lectus, id accumsan diam posuere eu. Cras eu blandit dui, vitae lacinia velit. Aliquam gravida massa a velit pulvinar, ut placerat sem tristique. Vivamus dictum, quam nec pharetra iaculis, risus velit dapibus nunc, quis lobortis sapien ligula mollis nunc. Praesent elementum rutrum tincidunt. Phasellus at lacinia lectus.
+                        </article>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" class="rd_tab" id="tab2">
+                    <label for="tab2" class="tab_label">Reservas</label>
+                    <div class="tab-content">
+                        <h2>Title 2</h2>
+                        <article>
+  
+                        </article>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="tabs" class="rd_tab" id="tab3">
+                    <label for="tab3" class="tab_label">Entregas</label>
+                    <div class="tab-content">
+                        <h2>Title 3</h2>
+                        <article>
+                            Integer at ligula eget turpis elementum ultrices eget quis tortor. Duis posuere lorem justo, ut malesuada tortor tempus a. Curabitur pellentesque ultricies consectetur. Maecenas diam lorem, hendrerit eget sem ut, tincidunt vulputate ipsum. In vel enim et erat sagittis eleifend vel eu nunc. In hac habitasse platea dictumst. Integer tincidunt, augue at posuere eleifend, lacus quam hendrerit risus, aliquam sollicitudin ligula tellus quis elit. Proin varius fringilla vehicula. Phasellus mollis sollicitudin orci, id fringilla magna volutpat non. Nullam sed luctus nisl. 
+                        </article>
+                    </div>
+                </li>
+
+
+                <li>
+                    <input type="radio" name="tabs" class="rd_tab" id="tab4">
+                    <label for="tab4" class="tab_label">Montagens</label>
+                    <div class="tab-content">
+                        <article>
+                            <div align="center">     
+                                <form action="recebeDados.php" method="POST">
+                                    <fieldset>
+                                     <label for="prod">  Produto(s): </label><br>
+                                     <input id="prod" name="prodtos" type="text" list="produtos" placeholder="Selecione o produto" required/>
+                                        <datalist id="produtos">
+                                        <option value="Cama">
+                                        <option value="Armário">
+                                        <option value="Mesa">
+                                        <option value="Estante">
+                                        <option value="Guarda-Roupa">
+                                        </datalist><br/>
+                                     
+                                    <label for="dest" accesskey="d"> Destinatário(s): </label><br> 
+                                    <input type="text" size="30" id="dest" required placeholder="Pessoa(s) a receber o(s) funcionário(s)"/><br>
+
+                                    <style> #tel:valid { background-color: #88ff88; } #tel:invalid { background-color: #FF7b5a; } </style>
+                                    <label for="tel" accesskey="t">Telefone:</label><br>
+                                    <input type="tel" size="20" id="tel" required placeholder="(XX) XXXXX-XXXX" pattern= "\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/>
+                                    </fieldset>
+
+                                    <br>
+                                    <fieldset>
+                                    <label for="end" accesskey="e"> Endereço:</label><br> 
+                                    <input type="nome" id="end" required /> <br>
+
+                                    <style> #cep:valid { background-color: #88ff88; } #cep:invalid { background-color: #FF7b5a; } </style>
+                                    <label for="cCEP"> Confirmar CEP: </label><br>
+                                    <input type="text" id="cep" name="cep" \pattern="[0-9]{5}-[0-9]{3}" \ placeholder="xxxxx-xxx" required autofocus><br>
+                                    </fieldset>
+
+                                    <br>
+                                    
+                                     <fieldset>
+                                    <label for="dthr" accesskey="d">Data:</label><br>
+                                    <input type="date" size="20" id="dt" required/><br/>
+
+                                    <label for="hora" accesskey="h">Hora:</label><br>
+                                    <label for="hora1" accesskey="h"> De </label> 
+                                    <input type="time" size="20" id="hora" required/>
+                                    <label for="hora2" accesskey="h"> até </label> 
+                                    <input type="time" size="20" id="hora2" required/><br/>
+                                     </fieldset>
+
+                                     <br><input type="submit" id="submit" value="Agendar">
+                                     &nbsp; <input type="reset" id="reset" value="Atualizar">
+                                   &nbsp; <input type="reset" id="reset" value="Limpar">
+                               </form>
+                            </div>
+                        </article>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="footer"> 
+        <a href="https://www.facebook.com/casamoveisvr/"><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+        <p> Site desenvolvido pela equipe La Casa Muables, 2020.</p>
+    </footer>
+</body>
+</html>
