@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: brown;
+  width: 250px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  transition: 0.3s;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main {
+  float: right;
+  width: calc(100% - 250px);
+  transition: 0.3s;
+}
+main h1 {
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+
+  background-color: rgba(165, 42, 42, 0.344);
+
+  border-radius: 8px;
+}
+.logo {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+/* slider */
+.slider {
+  max-width: 1065px;
+  height: 200px;
+  margin-bottom: 30px;
+  text-align: center;
+  float: right;
+}
+.slider img {
+  width: 1095px;
+  height: 200px;
+}
+
+/* menu */
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 2px;
+  transition: 0.3s;
+}
+.menu ul {
+  list-style: none;
+  margin-top: 2%;
+}
+.menu ul li:hover {
+  background-color: #bb3838;
+  border-left: solid 5px #fff;
+  border-radius: 8px;
+}
+.menu ul ul {
+  display: none;
+  text-decoration: none;
+}
+.menu ul li:hover > ul {
+  display: block;
+  font-size: 20px;
+  margin-left: 5%;
+}
+.menu ul ul ul {
+  margin-left: 170px;
+  top: 0;
+  position: absolute;
+}
+
+/*grid (catálogo)*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.grid img {
+  width: 90%;
+  height: 300px;
+
+  border: 2px solid brown;
+  border-radius: 8px;
+  margin: 5px;
+}
+.item-grid {
+  position: relative;
+  text-align: center;
+}
+.item-grid button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #bb3838;
+  width: 100px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.item-grid button:hover {
+  font-weight: bolder;
+  background: #C82828;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+  width: 150px;
+}
+/* fim */
+
+.tab-content button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  outline: 0;
+  background: #bb3838;
+  width: 90px;
+  border: 0;
+  padding: 5px;
+  margin-left: 70px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.tab-content button:hover {
+  font-weight: bolder;
+  background: #C82828;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+  width: 110px;
+}
+
+fieldset {
+  border: 0;
+}
+
+.footer {
+  position: initial;
+  text-align: center;
+  width: 100%;
+  background-color: brown;
+  float: right;
+  color: #fff;
+}
+
+#admfunc a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+#admfunc a:hover {
+  color: brown;
+  text-decoration: none;
+}
+
+#selectmoveis label {
+  font-size: 20px;
+}
+
+.pag {
+  margin-bottom: 10px;
+}
+
+.pag a {
+  color: #ffffff;
+}
+
+/* celular */
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 1170px;
+    padding: 0;
+  }
+  nav {
+    width: 0px;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: #ddd;
+    font-family: 'Roboto Condensed';
+  }
+
+  .nav_tabs{
+    width: 1000px;
+    height: 700px;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .nav_tabs ul{
+    list-style: none;
+  }
+
+  .nav_tabs ul li{
+    float: left;
+  }
+
+  .tab_label{
+    display: block;
+    width: 200px;
+    background-color: #363b48;
+    padding: 25px;
+    font-size: 20px;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+  }
+
+
+  .nav_tabs .rd_tab { 
+  display:none;
+  position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label { 
+  background-color: #e54e43;
+  color:#fff;}
+
+.tab-content{
+  border-top: solid 5px #e54e43;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  height: 320px;
+  width: 600px;
+  left: 0;  
+}
+
+.rd_tab:checked ~ .tab-content{
+  display: block;
+}
+.tab-content h2{
+  padding: 10px;
+  color: #87d3b7;
+}
+.tab-content article{
+  padding: 10px;
+  color: #555;
+}
+
