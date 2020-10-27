@@ -107,12 +107,18 @@ main h1 {
   text-align: center;
 }
 .item-grid button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: #bb3838;
   width: 100px;
   border: 0;
+  float: center;
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
@@ -275,3 +281,9 @@ fieldset {
   color: #555;
 }
 
+.form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

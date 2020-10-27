@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylelogin.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Agendar Montagem </title>
@@ -34,9 +35,7 @@
 
     <main>
 
-        <div align="center">
-            
-        
+        <div class="form" align="center">
             <form action="recebeDados.php" method="POST">
 
                 <fieldset>
@@ -81,9 +80,9 @@
                 <input type="time" size="20" id="hora2" required/><br/>
                  </fieldset>
 
-                 <br><input type="submit" id="submit" value="Agendar">
-                 &nbsp; <input type="reset" id="reset" value="Atualizar">
-               &nbsp; <input type="reset" id="reset" value="Limpar">
+                 <br><button type="submit" id="submit" value="Agendar"> Agendar </button>
+                 &nbsp; <button type="reset" id="reset" value="Atualizar"> Atualizar</button>
+               &nbsp; <button type="reset" id="reset" value="Limpar"> Limpar</button>
                </form>
 
 

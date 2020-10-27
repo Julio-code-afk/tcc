@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylelogin.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Cadastro de Móveis </title>
@@ -33,7 +34,7 @@
     </nav>
 
     <main>
-        <div align="center"> 
+        <div class="form" align="center"> 
             <form action="Catalogo.php" method="POST">
                 <fieldset>
                     <br>
@@ -41,6 +42,7 @@
                         <input type="file" id="img" name="img" accept="image/*" multiple>
                     <br><br>
                     <label for="tipomovel"> Tipo de Móvel: </label>
+                    <br>
                         <select>
                             <option value="Cadeira/Bancos"> Cadeira/Bancos </option>
                             <option value="Mesa"> Mesa </option>
@@ -54,7 +56,7 @@
                         <input type="number" name="precomovel">
                     <br><br>
 
-                    <br><input type="submit" id="submit" value="Cadastrar">
+                    <br><button type="submit" id="submit" value="Cadastrar"> Cadastrar </button>
             </form>                
                 </fieldset>
             <br>
