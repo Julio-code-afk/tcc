@@ -108,25 +108,58 @@ main h1 {
 }
 .item-grid button {
   position: absolute;
-  z-index: 1;
-  top: 285px;
+  top: 70%;
   left: 50%;
-
-  width: 60px;
-  height: 30px;
-
-  margin: -15px 0 0 -30px;
-  border: 1px solid #fff;
-  border-radius: 8px;
-
-  background-color: rgba(165, 42, 42, 0.748);
-  color: rgb(141, 135, 135);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #bb3838;
+  width: 100px;
+  border: 0;
+  float: center;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 .item-grid button:hover {
-  color: #fff;
-  cursor: pointer;
+  font-weight: bolder;
+  background: #C82828;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+  width: 150px;
 }
 /* fim */
+
+.tab-content button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  outline: 0;
+  background: #bb3838;
+  width: 90px;
+  border: 0;
+  padding: 5px;
+  margin-left: 70px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.tab-content button:hover {
+  font-weight: bolder;
+  background: #C82828;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+  width: 110px;
+}
 
 fieldset {
   border: 0;
@@ -143,7 +176,7 @@ fieldset {
 
 #admfunc a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 25px;
 }
 
@@ -248,3 +281,9 @@ fieldset {
   color: #555;
 }
 
+.form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

@@ -10,6 +10,7 @@ a{
   margin: auto;
 }
 .form {
+  border:black;
   position: relative;
   z-index: 1;
   background: #FFFFFF;
@@ -101,4 +102,30 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
+}
+
+select{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #bb3838;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+option{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #bb3838;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
