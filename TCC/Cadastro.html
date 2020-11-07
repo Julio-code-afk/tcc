@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cadastro </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylelogin.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</script>
+	<!---->
+	<!-- Menu -->
+	<header class="menuhorizontal">
+		<div class="logo">
+           <a href="Index.html"><img src="img/logo.png"></a>
+        </div>
+        	</header>
+	<!---->
+	 <main class="login-page">
+      	<div class="form">
+        	<form class="login-form" action="php/crud_Users.php" method="POST">
+		        <input type="text" id="fname" name="fname" placeholder="Nome" required="required" autofocus="autofocus">
+		        <input type="text" id="cpf" name="cpf" \pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \="\" placeholder="CPF - Somente n&uacute;meros" required="required" autofocus="autofocus">
+		        <input type="text" id="bairro" name="address" placeholder="Bairro" required="required" autofocus="autofocus">
+		        <input type="text" id="cep" name="cep" minlength="8" placeholder="CEP" required="required" autofocus="autofocus">
+		        <input type="text" id="email" name="email" placeholder="Email" required="required" autofocus="autofocus">
+		        <input type="text" id="phone" name="phone" placeholder="Telefone" required="required" autofocus="autofocus">
+		        <input type="password" id="password" name="password" placeholder="Senha" required="required" autofocus="autofocus">
+		        <input type="password" id="password" name="password" placeholder="Confirmar Senha" required="required" autofocus="autofocus">
+		        <button type="submit">Cadastre-se</button>
+		        <p class="message">J&aacute; tem Conta?<a href="login.html">Entrar</a></p>
+        	</form>
+      </div>
+    </main>
+</body>
+</html>

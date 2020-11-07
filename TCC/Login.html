@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylelogin.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!---->
+	<!-- Menu -->
+
+	<header class="menuhorizontal">
+		<div class="logo">
+           <a href="Index.html"><img src="img/logo.png"></a>
+        </div>
+        <footer class="footer">
+        	<a href="https://www.facebook.com/casamoveisvr/">
+          		<i class="fa fa-facebook-square" style="font-size:24px"></i>
+        	</a>
+        	<p> Site desenvolvido pela equipe La Casa Muables, 2020.</p>
+      	</footer>
+      	</div>
+	</header>
+	<!---->
+		<main class="login-page">
+      		<div class="form">
+        		<form class="login-form" action="php/login.php" method="POST">
+          			<input type="text" name="email" placeholder="Email"/>
+          			<input type="password" name="password" placeholder="Senha"/>
+          			<button><a href="Home.html">login</a></button>
+          			<p class="message">N&atilde;o tem Conta? <a href="Cadastro.html">Cadastre-se</a></p>
+          			<p class="message">J&aacute; Esqueceu a Senha?<a href="login.html">Redefinir</a></p>
+        		</form>
+      		</div>
+    	</main>
+</body>
+</html>
