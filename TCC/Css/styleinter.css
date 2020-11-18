@@ -1,8 +1,3 @@
-body{
-background-color: #F0F0F0;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
-}
-
 main {
     background-color: #E8E8E8;
     margin: 40px;
@@ -54,7 +49,7 @@ main {
 
   .tab_label{
     display: block;
-    width: 200px;
+    width: 344px;
     background-color: #363b48;
     padding: 25px;
     font-size: 20px;
@@ -78,8 +73,8 @@ main {
   background-color: #fff;
   display: none;
   position: absolute;
-  height: 320px;
-  width: 600px;
+  height: 400px;
+  width: 1032px;
   left: 0;  
 }
 
@@ -105,20 +100,19 @@ fieldset{
   border-radius: 1px;
 } 
 
-#caixinhabonitinha h1, h2, h3, h4, h5, a{
+h1, h2, h3, h4, h5, a{
   display: inline;
   text-align: justify;
 }
 
 
-#caixinhabonitinha h2{
+h2{
   background-color: brown;
   border-radius: 5px;
   padding: 3px;
   color: white;
 }
-
-#caixinhabonitinha h3{
+h3{
   margin-left: 10px;
 }
 
@@ -154,4 +148,116 @@ fieldset{
     text-align: justify;
 }
 
+.desc img{
+  width: 90%;
+  height: 90%;
+  border-radius: 2px;
+  margin: 5px;
+  border: 3px solid brown;
+}
+
+.lojas img{
+    padding: 10px 10px;
+    height: 300px;
+    width: 400px;
+    border-radius: 2px;
+    margin-left: 65px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid brown;
+}
+
+.empinfo img{
+    padding: 10px 10px;
+    height: 150px;
+    width: 450px;
+    border-radius: 20px;
+    margin-left: 65px;
+    box-shadow: 5px 5px 9px 1px rgba(0.5, 0.5, 0.5, 0.5);
+    background-color:#7D1919;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 280px;}
+
+.title{
+    color: #C82828;
+    font-family: 'Poppins'; 
+    font-style: bold;
+    font-size: 25px;
+}
+
+#t1{
+  font-family: 'Poppins', arial;
+  color: ;
+}
+
+main p, li{
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.but{
+  margin-left: 111px; 
+}
+
+.ic_visit button{
+  top: 60%;
+  left: 50%;
+  margin: 15px 10px 9px 10px;;
+  -ms-transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #bb3838;
+  width: 220px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+main a{
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+.ic_visit button:hover {
+  font-weight: bolder;
+  background: #C82828;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+  width: 2 30px;
+}
+
+#selecionado{
+  background-color: #bb3838;
+  border-left: solid 5px #fff;
+  border-radius: 8px;
+}
+
+input[type=radio]{ 
+   display:none; /* Esconde os inputs */}
+
+input[type=radio] + label{ 
+   display:inline-block;    height:20px;    padding:0 0 0 25px;    margin:0 10px 0 0;    background-image:url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.webp);    background-repeat:no-repeat;    background-position:0 0;}
+
+
+input[type=radio]:checked + label{background-position:0 -30px;}
 

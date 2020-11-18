@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title> Casa Móveis </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleclimont.css">
     <link rel="stylesheet" type="text/css" href="css/styleinter.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- JS -->
@@ -66,7 +69,7 @@
         </ul>
         <ul>
       <a href="Interface_Cliente_Montagem.html">
-        <li>
+        <li id="selecionado">
           <i class="large material-icons">dashboard</i> Montagem </a>
         </li>  
       </ul>
@@ -82,7 +85,123 @@
     </nav>
     <!---->
     <main>
+      <div class="row">
+          <div class="prod">
+            <img src="img/mv1.png" style="vertical-align: left;">
+              <div class="columnb">
+                <div class="nome"><h4>Nome do Produto</h4></div>
+                <div class="cod">código</div>
+                <div class="end">endereço</div>
+                <div class="dat">data</div>
+              </div>
+              <div class="columnc">
+                <button type="submit">Alterar</button>
+                <button type="submit">Cancelar</button>
+              </div>
+          </div>
+          <div class="prod"><img src="img/mv2.png" style="vertical-align: left;">
+              <div class="columnb">
+                <div class="nome"><h4>Nome do Produto</h4></div>
+                <div class="cod">código</div>
+                <div class="end">endereço</div>
+                <div class="dat">data</div>
+              </div>
+              <div class="columnc">
+                <button type="submit">Alterar</button>
+                <button type="submit">Cancelar</button>
+              </div></div>
+          <div class="prod"><img src="img/mv3.png" style="vertical-align: left;">
+              <div class="columnb">
+                <div class="nome"><h4>Nome do Produto</h4></div>
+                <div class="cod">código</div>
+                <div class="end">endereço</div>
+                <div class="dat">data</div>
+              </div>
+              <div class="columnc">
+                <button type="submit">Alterar</button>
+                <button type="submit">Cancelar</button>
+              </div></div>
+          <div class="prod"><img src="img/mv4.jpg" style="vertical-align: left;">
+              <div class="columnb">
+                <div class="nome"><h4>Nome do Produto</h4></div>
+                <div class="cod">código</div>
+                <div class="end">endereço</div>
+                <div class="dat">data</div>
+              </div>
+              <div class="columnc">
+                <button type="submit">Alterar</button>
+                <button type="submit">Cancelar</button>
+              </div></div>
+              <div class="prod">
+            <img src="img/mv5.png" style="vertical-align: left;">
+              <div class="columnb">
+                <div class="nome"><h4>Nome do Produto</h4></div>
+                <div class="cod">código</div>
+                <div class="end">endereço</div>
+                <div class="dat">data</div>
+              </div>
+              <div class="columnc">
+                <button type="submit">Alterar</button>
+                <button type="submit">Cancelar</button>
+              </div>
+          </div>
+      </div>
     </main>
-    <!---->
+
+
+
+    <!-- FORM RESERVA
+
+    <div class="form" align="left">
+            <form action="recebeDados.php" method="POST">
+
+                <fieldset>
+                 <label for="prod">  Produto(s): </label><br>
+                 <input id="prod" name="prodtos" type="text" list="produtos" placeholder="Selecione o produto" required/>
+                    <datalist id="produtos">
+                    <option value="Cama">
+                    <option value="Armário">
+                    <option value="Mesa">
+                    <option value="Estante">
+                    <option value="Guarda-Roupa">
+                    </datalist><br/><br>
+                 
+                <label for="dest" accesskey="d"> Destinatário(s): </label><br> 
+                <input type="text" size="30" id="dest" required placeholder="Pessoa(s) a receber o(s) funcionário(s)"/><br><br>
+
+                <style> #tel:valid { background-color: #88ff88; } #tel:invalid { background-color: #FF7b5a; } </style>
+                <label for="tel" accesskey="t">Telefone:</label><br>
+                <input type="tel" size="20" id="tel" required placeholder="(XX) XXXXX-XXXX" pattern= "\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                <label for="end" accesskey="e"> Endereço:</label><br> 
+                <input type="nome" id="end" required /> <br>
+                <br>
+                <style> #cep:valid { background-color: #88ff88; } #cep:invalid { background-color: #FF7b5a; } </style>
+                <label for="cCEP"> Confirmar CEP: </label><br>
+                <input type="text" id="cep" name="cep" \pattern="[0-9]{5}-[0-9]{3}" \ placeholder="xxxxx-xxx" required autofocus><br>
+                </fieldset>
+
+                <br>
+                
+                 <fieldset>
+                <label for="dthr" accesskey="d">Data:</label><br>
+                <input type="date" size="20" id="dt" required/><br/>
+                <br>
+
+                <label for="hora" accesskey="h">Hora:</label><br><br>
+                <label for="hora1" accesskey="h"> Entre </label><br> 
+                <input type="time" size="20" id="hora" required/><br>
+                <label for="hora2" accesskey="h"> e </label><br> 
+                <input type="time" size="20" id="hora2" required/><br/>
+                 </fieldset>
+                 <br><button type="submit" id="submit" value="Agendar"> Agendar </button>
+                 &nbsp; <button type="reset" id="reset" value="Atualizar"> Atualizar</button>
+               &nbsp; <button type="reset" id="reset" value="Limpar"> Limpar</button>
+               </form>
+        </div>
+-->
   </body>
   </html>

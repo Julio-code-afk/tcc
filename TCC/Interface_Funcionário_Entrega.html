@@ -5,6 +5,7 @@
     <title> Casa Móveis </title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/styleinter.css">
+    <link rel="stylesheet" type="text/css" href="css/stylecalen.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -41,38 +42,33 @@
       </div>
       <!---->
 
- <div class="menuopcoes">
+      <div class="menuopcoes">
         <ul>
-        <a href="Interface_Cliente_Dados.html">
+        <a href="Interface_Funcionário_Catálogo.html">
             <li>
-              <i class="large material-icons">assignment_ind</i> Usuário </a>
+              <i class="large material-icons">assignment_ind</i> Catálogo </a>
             </li>  
         </ul>
         <ul>
-        <a href="Interface_Cliente_Carrinho.html">
-            <li>
-              <i class="large material-icons">shopping_cart</i> Carrinho </a>
-            </li>  
-        </ul>
-        <ul>
-        <a href="Interface_Cliente_Reservas.html">
+        <a href="Interface_Funcionário_Reservas.html">
             <li>
               <i class="large material-icons">dashboard</i> Reserva </a>
             </li>  
         </ul>
         <ul>
-        <a href="Interface_Cliente_Entrega.html">
+        <a href="Interface_Funcionário_Entrega.html">
             <li id="selecionado">
               <i class="large material-icons">dashboard</i> Entregas </a>
             </li>  
         </ul>
         <ul>
-      <a href="Interface_Cliente_Montagem.html">
+      <a href="Interface_Funcionário_Montagem.html">
         <li>
           <i class="large material-icons">dashboard</i> Montagem </a>
         </li>  
       </ul>
       </div>
+      
       <footer class="footer">
         <a href="https://www.facebook.com/casamoveisvr/">
           <i class="fa fa-facebook-square" style="font-size:24px"></i>
@@ -80,64 +76,110 @@
         <p> Site desenvolvido pela equipe La Casa Muables, 2020.</p>
       </footer>
     </nav>
-    <!----><main>
+    <!---->
+    <main>
+      <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+           <li>Agosto<br><span style="font-size:18px">2017</span></li>
+        </ul>
+      </div>
+        <ul class="weekdays">
+          <li>Dom</li>
+          <li>Seg</li>
+          <li>Ter</li>
+          <li>Qua</li>
+          <li>Qui</li>
+          <li>Sex</li>
+          <li>Sáb</li>
+        </ul>
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li><span class="active">10</span></li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+      <div class="row">
           <div class="prod">
             <img src="img/mv1.png" style="vertical-align: left;">
               <div class="columnb">
                 <div class="nome"><h4>Nome do Produto</h4></div>
                 <div class="cod">código</div>
-                <div class="end">endereço</div>
-                <div class="dest">destinatário</div>
+                <div class="filial">Retirado em: (filial)</div>
+                <div class="dat">data q a reserva foi feita</div>
               </div>
               <div class="columnc">
-                <button type="submit">Alterar</button>
-                <button type="submit">Cancelar</button>
+                <button type="submit">Agendar</button>
               </div>
           </div>
           <div class="prod"><img src="img/mv2.png" style="vertical-align: left;">
               <div class="columnb">
                 <div class="nome"><h4>Nome do Produto</h4></div>
                 <div class="cod">código</div>
-                <div class="end">endereço</div>
-                <div class="dest">destinatário</div>
+                <div class="filial">Retirado em: (filial)</div>
+                <div class="dat">data q a reserva foi feita</div>
               </div>
               <div class="columnc">
-                <button type="submit">Alterar</button>
-                <button type="submit">Cancelar</button>
+                <button type="submit">Agendar</button>
               </div></div>
           <div class="prod"><img src="img/mv3.png" style="vertical-align: left;">
               <div class="columnb">
                 <div class="nome"><h4>Nome do Produto</h4></div>
                 <div class="cod">código</div>
-                <div class="end">endereço</div>
-                <div class="dest">destinatário</div>
+                <div class="filial">Retirado em: (filial)</div>
+                <div class="dat">data q a reserva foi feita</div>
               </div>
               <div class="columnc">
-                <button type="submit">Alterar</button>
-                <button type="submit">Cancelar</button>
+                <button type="submit">Agendar</button>
               </div></div>
           <div class="prod"><img src="img/mv4.jpg" style="vertical-align: left;">
               <div class="columnb">
                 <div class="nome"><h4>Nome do Produto</h4></div>
                 <div class="cod">código</div>
-                <div class="end">endereço</div>
-                <div class="dest">destinatário</div>
+                <div class="filial">Retirado em: (filial)</div>
+                <div class="dat">data q a reserva foi feita</div>
               </div>
               <div class="columnc">
-                <button type="submit">Alterar</button>
-                <button type="submit">Cancelar</button>
+                <button type="submit">Agendar</button>
               </div></div>
               <div class="prod">
             <img src="img/mv5.png" style="vertical-align: left;">
               <div class="columnb">
                 <div class="nome"><h4>Nome do Produto</h4></div>
                 <div class="cod">código</div>
-                <div class="end">endereço</div>
-                <div class="dest">destinatário</div>
+                <div class="filial">Retirado em: (filial)</div>
+                <div class="dat">data q a reserva foi feita</div>
               </div>
               <div class="columnc">
-                <button type="submit">Alterar</button>
-                <button type="submit">Cancelar</button>
+                <button type="submit">Agendar</button>
               </div>
           </div>
       </div>

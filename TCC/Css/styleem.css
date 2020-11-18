@@ -1,0 +1,10 @@
+main {
+    background-color: #E8E8E8;
+    margin: 40px;
+    margin-right: 248px;
+    margin-top: 90px;
+    padding: 30px 40px 15px 25px;
+    height: 100%;
+    width: 942px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}

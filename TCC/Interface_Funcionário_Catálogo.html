@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title> Casa Móveis </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styleinter_ifc.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -41,43 +42,30 @@
       <!---->
 
       <div class="menuopcoes">
-
-      <!-- Pesquisa -->
-
-      <!---->
         <ul>
-          <a href="Cadastro.html">
-            <li>
-              <i class="medium material-icons">assignment</i>
-         Cadastro </a>
-          <a href="Login.html"><li><i class="medium material-icons">assignment_ind</i> Login </a>
+        <a href="Interface_Funcionário_Catálogo.html">
+            <li id="selecionado">
+              <i class="large material-icons">assignment_ind</i> Catálogo </a>
+            </li>  
         </ul>
-        
-     <!-- Catálogo -->
         <ul>
-          <a href="Index.html">
+        <a href="Interface_Funcionário_Reservas.html">
             <li>
-              <i class="large material-icons">dashboard</i>
-         Catálogo </a>
-          <ul id="submenu">
-             <a href="#sala">
-                <li>
-                  Sala
-                </li>
-              </a>
-              <a href="#cozinha">
-                <li>
-                  Cozinha
-                </li>
-              </a>
-              <a href="#banheiro">
-                <li>
-                  Banheiro
-                </li>
-              </a>
-          </ul>
+              <i class="large material-icons">dashboard</i> Reserva </a>
+            </li>  
         </ul>
-        <!---->
+        <ul>
+        <a href="Interface_Funcionário_Entrega.html">
+            <li>
+              <i class="large material-icons">dashboard</i> Entregas </a>
+            </li>  
+        </ul>
+        <ul>
+      <a href="Interface_Funcionário_Montagem.html">
+        <li>
+          <i class="large material-icons">dashboard</i> Montagem </a>
+        </li>  
+      </ul>
       </div>
       <footer class="footer">
         <a href="https://www.facebook.com/casamoveisvr/">
@@ -87,18 +75,124 @@
       </footer>
     </nav>
     <!---->
+    <main>
+      <div class="nav_tabs">
+      <ul>
+        <li>
+          <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+          <label for="tab1" class="tab_label">Adicionar Item</label>
+          <div class="tab-content">
+            <article>
+                   <form action="Catalogo.php" method="POST">
+                    <fieldset>
+                        <br>
+                        <label for="imgmovel"> Imagens do Produto:</label>
+                            <input type="file" id="img" name="img" accept="image/*" multiple>
+                        <br><br>
+                        <label for="tipomovel"> Tipo de Móvel: </label>
+                        <br>
+                            <select>
+                                <option value="Cadeira/Bancos"> Cadeira/Bancos </option>
+                                <option value="Mesa"> Mesa </option>
+                                <option value="Sofa"> Sofá </option>
+                                <option value="Armario"> Armário </option>
+                                <option value="Cama"> Cama </option>
+                                <option value="Poltrona"> Poltrona </option> 
+                            </select> 
+                        <br><br>
+                        <label for="pcmovel"> Preço do Produto:</label>
+                            <input type="number" name="precomovel">
+                        <br><br>
+
+                        <br><button type="submit" id="submit" value="Cadastrar"> Cadastrar </button>
+                </form>                
+                    </fieldset>
+                <br>
+                <a href="admcatalogo.html"><button> < Voltar </button></a>
+            </article>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" class="rd_tab" id="tab2">
+          <label for="tab2" class="tab_label"> Modificar Item </label>
+          <div class="tab-content">
+            <article>
+              <div class="form" align="center">
+            <form action="Catalogo.php" method="POST">
+                <fieldset>
+                    <br>
+                    <label for="imgmovel"> Imagens do Produto:</label>
+                        <input type="file" id="img" name="img" accept="image/*" multiple>
+                    <br><br>
+                    <label for="tipomovel"> Tipo de Móvel: </label>
+                        <select>
+                            <option value="Cadeira/Bancos"> Cadeira/Bancos </option>
+                            <option value="Mesa"> Mesa </option>
+                            <option value="Sofa"> Sofá </option>
+                            <option value="Armario"> Armário </option>
+                            <option value="Cama"> Cama </option>
+                            <option value="Poltrona"> Poltrona </option> 
+                        </select> 
+                    <br><br>
+                    <label for="pcmovel"> Preço do Produto:</label>
+                        <input type="number" name="precomovel">
+                    <br><br>
+
+                    <br><button type="submit" id="submit" value="Salvar Alterações"> Salvar </button>              
+                </fieldset>
+            </form>  
+            <br>
+            <a href="admcatalogo.html"><button> < Voltar </button></a>
+        </div>
+            </article>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" class="rd_tab" id="tab3">
+          <label for="tab3" class="tab_label">Excluir Item</label>
+          <div class="tab-content">
+            <article>
+              <div id="selectmoveis" align="center"> 
+                <label for="imgmovel"> Selecione o Produto: </label>
+        <br><br>
+        <a href="admcatalogo.html"><button> < Voltar </button></a>
+        </div> 
+            </article>
+          </div>
+        </li>
+         <li>
+          <input type="radio" id="tab4" class="rd_tab" name="tabs" checked>
+          <label for="tab4" class="tab_label">Banner Promocional</label>
+          <div class="tab-content">
+            <article>
+                   <form action="Catalogo.php" method="POST">
+                    <fieldset>
+                        <br>
+                        <label for="imgbanner"> Imagem do Banner:</label>
+                            <input type="file" id="img" name="img" accept="image/*" multiple>
+                        <br><br>
+                    
+                        <br><button type="submit" id="submit" value="Cadastrar"> Cadastrar </button>
+                </form>                
+                    </fieldset>
+                <br>
+                <a href="admcatalogo.html"><button> < Voltar </button></a>
+            </article>
+          </div>
+        </li>
+      </ul>
+    </div>
+
     <!-- Slide -->
     <header>
       <div class="slider">
         <img src="img/promoc1.png" alt="imagem01" title="imagem01"/>
         <img src="img/promoc2.png" alt="imagem02" title="imagem02"/>
-        <img src="img/promoc3.jpg" alt="imagem03" title="imagem03"/>
       </div>          
     <!--FIM DIV IMAGENS-->
     </header>
      <!---->
      <!-- Grid -->
-      <main>
         <br>
         <h1 id="sala"></h1>
           <div class="grid">
@@ -261,7 +355,7 @@
                         </strong>
                     </div>
                 </div>
-            </main>
-     <!---->
+    </main>
+    <!---->
   </body>
   </html>
