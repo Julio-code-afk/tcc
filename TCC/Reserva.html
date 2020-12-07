@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> Cadastro </title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/stylelogin.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-	<!-- Js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</script>
-	<!---->
-	<!-- Menu -->
-	<header class="menuhorizontal">
-		<div class="logo">
-           <a href="Index.html"><img src="img/logo.png"></a>
-        </div>
-        	</header>
-	<!---->
-	 <main class="login-page">
-      	<div class="form">
-        	<form action="Reservas.php" method="POST">
+    <head>
+        <title>
+            Cadastro
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylelogin.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!---->
+        <!-- Menu -->
+        <header class="menuhorizontal">
+            <div class="logo">
+                <a href="Index.html"><img src="img/logo.png"></a>
+            </div>
+        </header>
+        <!---->
+        <main class="login-page">
+            <div class="form">
+                <form action="Reservas.php" method="POST">
+                    <br>
+                    <h2>Móvel: [Móvel]</h2>
+                    <br>
+                    <fieldset>
+                        <label for="Pagamento">
+                            Retirada em:</label>
+                        <br><br>
+                        <input type="radio" id="CMGustLira" name="filial">
+                        <label for="GustLira">
+                            Casa Móveis - Gustavo Lira
+                        </label><br><br>
+                        <input type="radio" id="CMAterrado" name="filial">
+                        <label for="Aterrado">
+                            Casa Móveis - Aterrado
+                        </label><br><br>
+                        <input type="radio" id="CMSantAgost" name="filial">
+                        <label for="SantAgost">
+                            Casa Móveis - Santo Agostinho
+                        </label><br><br>
+                        <input type="radio" id="CMRetiro" name="filial">
+                        <label for="Retiro">
+                            Casa Móveis - Retiro
+                        </label><br><br>
+                        <br><br>
+                    </fieldset>
+                    <br><input type="submit" id="submit" value="Reservar">
+                </form>
                 <br>
-                <h2>Móvel: [Móvel]</h2>
-                <br>
-                <fieldset>
-                <label for="Pagamento"> Retirada em:</label>
-                <br><br>
-                 <input type="radio" id="CMGustLira" name="filial"> <label for="GustLira"> Casa Móveis - Gustavo Lira </label><br><br>
-                 <input type="radio" id="CMAterrado" name="filial"> <label for="Aterrado"> Casa Móveis - Aterrado  </label><br><br>
-                 <input type="radio" id="CMSantAgost" name="filial"> <label for="SantAgost"> Casa Móveis - Santo Agostinho </label><br><br>
-                 <input type="radio" id="CMRetiro" name="filial"> <label for="Retiro"> Casa Móveis - Retiro </label><br><br>             
-                <br><br>
-                 </fieldset>
-                 <br><input type="submit" id="submit" value="Reservar">
-               </form>
-               <br>
-                <button> Voltar </button>
-     	 </div>	  
-    </main>
-</body>
+                <button>
+                    Voltar
+                </button>
+            </div>
+        </main>
+    </body>
 </html>
