@@ -1,7 +1,7 @@
 <?php
 
 include "connection.php";
-include "Cat.php";
+include "Reserva.php";
 
 class Dao{
 
@@ -23,16 +23,16 @@ class Dao{
 
     public function get_all()
     {
-        $sql = "SELECT * FROM tbl_moveis";
+        $sql = "SELECT * FROM tbl_reserva";
         $stmt = $this->conexao->_conn->prepare($sql);
         $stmt->execute();
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         return $stmt->fetchAll();
     }
 
-    public function get_by_id($cod)
+    public function get_by_id($codRev)
     {
-        $sql = "SELECT * FROM tbl_moveis WHERE mov_cod = $cod";
+        $sql = "SELECT * FROM tbl_reserva WHERE rev_cod = $codRev";
         $stmt = $this->conexao->_conn->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchObject(__CLASS__);

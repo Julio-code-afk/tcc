@@ -189,7 +189,6 @@ h3{
 
 #t1{
   font-family: 'Poppins', arial;
-  color: ;
 }
 
 main p, li{
@@ -235,7 +234,8 @@ li{
 }
 
 main a{
-  color:#FFFFFF;
+  color:#C82828;
+  font-style: bold;
   text-decoration: none;
 }
 

@@ -21,7 +21,7 @@ try {
         $address = $user->get_address();
         $phone = $user->get_phone();
 
-        $sql = "INSERT INTO tbl_cliente(cli_cpf, cli_nome, cli_email, cli_senha, cli_cep, cli_end,cli_tel)
+        $sql = "INSERT INTO tbl_cliente(cli_cpf, cli_nome, cli_email, cli_senha, cli_cep, cli_end, cli_tel)
             VALUES('$cpf', '$name', '$email', '$password', '$cep', '$address', $phone)";
         $conexao->_conn->exec($sql);
 
@@ -72,6 +72,6 @@ function end_process()
 {
     global $conexao;
     $conexao->close_connection();
-    header("Location: ../Index.html");
+    header("Location: ../index.php");
     die();
 }

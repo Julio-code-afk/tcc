@@ -1,7 +1,7 @@
 <?php
 
 include "connection.php";
-include "Cat.php";
+include "Montagem.php";
 
 class Dao{
 
@@ -23,16 +23,16 @@ class Dao{
 
     public function get_all()
     {
-        $sql = "SELECT * FROM tbl_moveis";
+        $sql = "SELECT * FROM tbl_montagem";
         $stmt = $this->conexao->_conn->prepare($sql);
         $stmt->execute();
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         return $stmt->fetchAll();
     }
 
-    public function get_by_id($cod)
+    public function get_by_id($codMon)
     {
-        $sql = "SELECT * FROM tbl_moveis WHERE mov_cod = $cod";
+        $sql = "SELECT * FROM tbl_montagem WHERE mon_cod = $codMon";
         $stmt = $this->conexao->_conn->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchObject(__CLASS__);

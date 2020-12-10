@@ -130,6 +130,7 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 .grid img {
   width: 90%;

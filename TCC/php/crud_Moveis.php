@@ -30,7 +30,7 @@ try {
             )
                 VALUES(
             '$img', 
-            '$type', 
+             $type, 
              $price, 
              $cod, 
              $qtd, 
@@ -53,7 +53,7 @@ try {
         $desc = $cat->get_desc();
 
         $sql = "UPDATE tbl_moveis
-                SET mov_img = '$img',  cat_cod = '$type', mov_price = $price, mov_qtd = $qtd, mov_desc = '$desc'
+                SET mov_img = '$img',  cat_cod = $type, mov_price = $price, mov_qtd = $qtd, mov_desc = '$desc'
                 WHERE mov_cod = $cod";
 
         $conexao->_conn->exec($sql);
@@ -85,6 +85,6 @@ function end_process()
 {
     global $conexao;
     $conexao->close_connection();
-    header("Location: ../Interface_Funcionário_Catálogo.html");
+    header("Location: ../Interface_Funcionário_Catálogo.php");
     die();
 }
